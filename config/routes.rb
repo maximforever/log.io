@@ -11,6 +11,8 @@ Rails.application.routes.draw do
   get    'contact' => 'pages#contact'
   get    'signup'  => 'users#new'
   get    'login'   => 'sessions#new'
+  get    'all'     => 'users#all'
+  get    'search'  => 'users#search'
   post   'login'   => 'sessions#create'
   delete 'logout'  => 'sessions#destroy'
 

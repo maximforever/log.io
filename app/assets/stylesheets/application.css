@@ -17,6 +17,11 @@
 
 /* mixins, variables, etc. */
 
+body{
+  width: 100%;
+  height: 100%;
+}
+
 $gray-medium-light: #eaeaea;
 
 @mixin box_sizing {
@@ -105,6 +110,15 @@ input {
 #success {
   display: inline;
   font-size: 12px;
+}
+
+#current {
+  color: red;
+}
+
+.searching {
+  width: 50%;
+  text-align: center;
 }
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 

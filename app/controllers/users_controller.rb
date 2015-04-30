@@ -18,6 +18,16 @@ class UsersController < ApplicationController
   	end
   end
 
+  def all
+    @user = User.all
+  end
+
+  def index
+    @users = User.search(params[:search])
+  end
+
+
+
  private
 
     def user_params

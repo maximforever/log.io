@@ -1,0 +1,11 @@
+<h2>Search results:</h2>
+
+<% if @users.empty? %>
+	<h4>There are no results</h4>
+	<% else %>
+		<% @users.each do |u| %>
+			<h5><%= u.name %></h5>
+		<% end %>	
+<% end %>
+
+<%= link_to "Search again?", search_path %>
